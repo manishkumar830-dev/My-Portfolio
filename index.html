@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manish Kumar | BCA Student &amp; Aspiring Web Developer</title>
+<meta name="description" content="Portfolio of Manish Kumar — BCA student at CSJMU Kanpur, Aspiring Web Developer.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Background layers -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-dots" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--one" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--three" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--four" aria-hidden="true"></div>
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<!-- ===== NAVIGATION ===== -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#home" class="navbar__logo">
+      <span class="logo-bracket">&lt;</span>Manish<span class="logo-accent"> Kumar</span><span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav__links">
+
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#about" class="nav-link">About</a>
+  <a href="#skills" class="nav-link">Skills</a>
+  <a href="#education" class="nav-link">Education</a>
+  <a href="#projects" class="nav-link">Projects</a>
+  <a href="#certificates" class="nav-link">Certification</a>
+  <a href="#contact" class="nav-link">Contact</a>
+
+</nav>
+    <a href="#contact" class="btn btn--nav">Let's Talk</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#journey" class="nav-link">Journey</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+
+      <div class="hero__text" data-reveal>
+        <p class="eyebrow"><span class="dot"></span> Available for internships &amp; freelance work</p>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line">Hi, I'm</span>
+          
+          <span class="hero__title-name">Manish Kumar</span>
+        </h1>
+
+        <p class="hero__role">
+          <span class="typewriter" id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+
+        <p class="hero__desc">
+          Passionate about Python, Web Development and building creative digital solutions.
+          Currently pursuing my BCA at CSJMU, Kanpur — turning ideas into code, one project at a time.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">
+            <span>View My Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="Manish Resume.pdf" target="_blank" class="btn btn--ghost">
+            <span>View My Resume</span>
+          </a>
+        <a href="#contact" class="btn btn--ghost">
+    <span>Contact Me</span>
+</a>
+        </div>
+
+        <div class="hero__socials">
+          <a href="https://github.com/manishkumar830-dev" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/manish-kumar-282073412" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:manishkumar8303505285@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://wa.me/918303505285" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>    
+          <a href="https://instagram.com/its_manishhh____" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num">10+</span>
+            <span class="hero__stat-label">Technologies Learning</span>
+          </div>
+          <div class="hero__stat-sep"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">1</span>
+            <span class="hero__stat-label">Featured Project</span>
+          </div>
+          <div class="hero__stat-sep"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">BCA</span>
+            <span class="hero__stat-label">2nd Year Pursuing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-reveal>
+        <div class="orbit-scene">
+
+          <!-- layered 3D orbit rings, different depths & speeds -->
+          <div class="orbit-ring orbit-ring--1"></div>
+          <div class="orbit-ring orbit-ring--2"></div>
+          <div class="orbit-ring orbit-ring--3"></div>
+          <div class="orbit-ring orbit-ring--4"></div>
+
+          <!-- floating geometric shapes -->
+          <span class="geo-shape geo-shape--tri" aria-hidden="true"></span>
+          <span class="geo-shape geo-shape--sq" aria-hidden="true"></span>
+          <span class="geo-shape geo-shape--dot" aria-hidden="true"></span>
+          <span class="geo-shape geo-shape--ring" aria-hidden="true"></span>
+
+          <!-- orbiting tech icon nodes -->
+          <div class="orbit-node orbit-node--a"><i class="fa-brands fa-python"></i></div>
+          <div class="orbit-node orbit-node--b"><i class="fa-brands fa-html5"></i></div>
+          <div class="orbit-node orbit-node--c"><i class="fa-brands fa-js"></i></div>
+          <div class="orbit-node orbit-node--d"><i class="fa-brands fa-git-alt"></i></div>
+          <div class="orbit-node orbit-node--e"><i class="fa-brands fa-css3-alt"></i></div>
+
+          <!-- floating glass code chips -->
+          <div class="code-chip code-chip--a">&lt;/&gt;</div>
+          <div class="code-chip code-chip--b">{ }</div>
+          <div class="code-chip code-chip--c">//</div>
+
+          <span class="orbit-particle p1"></span>
+          <span class="orbit-particle p2"></span>
+          <span class="orbit-particle p3"></span>
+          <span class="orbit-particle p4"></span>
+          <span class="orbit-particle p5"></span>
+          <span class="orbit-particle p6"></span>
+
+          <!-- square profile photo, always on top, never covered -->
+          <div class="profile-frame">
+    <div class="profile-frame__glow"></div>
+
+    <img src="assets/profile.jpg"
+         alt="Manish Kumar"
+         class="profile-frame__img"
+         id="profileImg"
+         style="object-fit: cover; object-position: center; width: 100%; height: 100%;"
+         onerror="this.onerror=null;this.src='';this.parentElement.classList.add('no-photo');">
+
+    <div class="profile-frame__fallback">
+        <i class="fa-solid fa-user"></i>
+    </div>
+</div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section__head" data-reveal>
+      <p class="section__eyebrow">01 — Who I Am</p>
+      <h2 class="section__title">About Me</h2>
+
+
+    </div>
+    
+ <div class="about__grid">
+
+  <!-- LEFT SIDE: PROFILE PHOTO -->
+  <div class="about__visual" data-reveal>
+
+    <div class="intro-card glass-card">
+
+      <div class="intro-card__photo">
+        <img
+          src="assets/profile.jpg"
+          alt="Manish Kumar"
+          id="aboutImg"
+          style="object-fit: cover; object-position: center; width: 100%; height: 100%;"
+          onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('no-photo');"
+        >
+
+        <div class="intro-card__fallback">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+
+      <h3 class="intro-card__name">Manish Kumar</h3>
+
+      <p class="intro-card__role">
+        BCA Student
+      </p>
+
+      <p class="intro-card__role intro-card__role--accent">
+        Aspiring Python Developer
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- RIGHT SIDE: ABOUT CONTENT -->
+  <div class="glass-card about__card" data-reveal>
+
+    <p class="about__quote">
+      "Hello, I'm Manish Kumar, a BCA student at Chhatrapati Shahu Ji Maharaj University, Kanpur.
+      I am passionate about Python programming, web development and building useful digital projects."
+    </p>
+
+    <p class="about__text">
+      I enjoy learning new technologies and transforming ideas into practical and attractive web
+      applications. I am continuously improving my programming and development skills with the
+      goal of building a strong career in the technology field.
+    </p>
+
+    <p class="about__text">
+      I am currently pursuing my Bachelor of Computer Applications (BCA) and developing my knowledge
+      in programming, web development and modern technologies — focusing on practical skills through
+      real projects and consistent learning.
+    </p>
+
+    <div class="about__tags">
+      <span class="chip">
+        <i class="fa-brands fa-python"></i>
+        Python
+      </span>
+
+      <span class="chip">
+        <i class="fa-solid fa-globe"></i>
+        Web Development
+      </span>
+
+      <span class="chip">
+        <i class="fa-solid fa-graduation-cap"></i>
+        BCA Student
+      </span>
+
+      <span class="chip">
+        <i class="fa-solid fa-code"></i>
+        Problem Solver
+      </span>
+    </div>
+
+  </div>
+
+</div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="section__head" data-reveal>
+      <p class="section__eyebrow">02 — Academic Path</p>
+      <h2 class="section__title">Education</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__line" aria-hidden="true"></div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__dot"></div>
+        <div class="glass-card timeline__card">
+          <div class="timeline__card-top">
+            <span class="timeline__icon"><i class="fa-solid fa-school"></i></span>
+            <span class="status-badge status-badge--done">Completed</span>
+          </div>
+          <h3>High School</h3>
+          <p>Built the foundation — core subjects, discipline and first curiosity about how computers work.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__dot"></div>
+        <div class="glass-card timeline__card">
+          <div class="timeline__card-top">
+            <span class="timeline__icon"><i class="fa-solid fa-book"></i></span>
+            <span class="status-badge status-badge--done">Completed</span>
+          </div>
+          <h3>Intermediate (12th)</h3>
+          <p>Strengthened fundamentals and decided to pursue computer applications for higher studies.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__dot timeline__dot--active"></div>
+        <div class="glass-card timeline__card timeline__card--active">
+          <div class="timeline__card-top">
+            <span class="timeline__icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span class="status-badge status-badge--progress">Currently Pursuing</span>
+          </div>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p class="timeline__uni">Chhatrapati Shahu Ji Maharaj University (CSJMU), Kanpur</p>
+          <p>Studying programming, web technologies and computer science fundamentals while building
+          real-world projects alongside coursework.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="section__head" data-reveal>
+      <p class="section__eyebrow">03 — Toolbox</p>
+      <h2 class="section__title">Skills</h2>
+      <p class="section__sub">Technologies I use and am actively getting better at.</p>
+    </div>
+
+    <div class="skills__grid">
+
+      <div class="skill-card glass-card" data-reveal data-level="70">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--python"><i class="fa-brands fa-python"></i></span>
+          <span class="level-tag level-tag--intermediate">Intermediate</span>
+        </div>
+        <h3>Python</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="70"></span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-reveal data-level="80">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--html"><i class="fa-brands fa-html5"></i></span>
+          <span class="level-tag level-tag--intermediate">Intermediate</span>
+        </div>
+        <h3>HTML</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="80"></span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-reveal data-level="75">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--css"><i class="fa-brands fa-css3-alt"></i></span>
+          <span class="level-tag level-tag--intermediate">Intermediate</span>
+        </div>
+        <h3>CSS</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="75"></span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-reveal data-level="55">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--js"><i class="fa-brands fa-js"></i></span>
+          <span class="level-tag level-tag--learning">Learning</span>
+        </div>
+        <h3>JavaScript</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="55"></span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-reveal data-level="50">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--c"><i class="fa-solid fa-c"></i></span>
+          <span class="level-tag level-tag--familiar">Familiar</span>
+        </div>
+        <h3>C</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="50"></span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-reveal data-level="50">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--cpp"><i class="fa-regular fa-file-code"></i></span>
+          <span class="level-tag level-tag--familiar">Familiar</span>
+        </div>
+        <h3>C++</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="50"></span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-reveal data-level="65">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--git"><i class="fa-brands fa-git-alt"></i></span>
+          <span class="level-tag level-tag--intermediate">Intermediate</span>
+        </div>
+        <h3>Git &amp; GitHub</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="65"></span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-reveal data-level="70">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--web"><i class="fa-solid fa-globe"></i></span>
+          <span class="level-tag level-tag--intermediate">Intermediate</span>
+        </div>
+        <h3>Web Development</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="70"></span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-reveal data-level="75">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--logic"><i class="fa-solid fa-puzzle-piece"></i></span>
+          <span class="level-tag level-tag--intermediate">Intermediate</span>
+        </div>
+        <h3>Problem Solving</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="75"></span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-reveal data-level="60">
+        <div class="skill-card__top">
+          <span class="skill-card__icon icon--responsive"><i class="fa-solid fa-mobile-screen-button"></i></span>
+          <span class="level-tag level-tag--learning">Learning</span>
+        </div>
+        <h3>Responsive Design</h3>
+        <div class="skill-bar"><span class="skill-bar__fill" data-fill="60"></span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="section__head" data-reveal>
+      <p class="section__eyebrow">04 — Featured Work</p>
+      <h2 class="section__title">Projects</h2>
+      <p class="section__sub">A real project I've built while learning — more are on the way.</p>
+    </div>
+
+    <div class="project-card glass-card tilt-card" data-reveal id="tiltCard">
+      <div class="project-card__preview">
+
+  <img
+    src="assets/student-study-planner.png"
+    alt="Student Study Planner"
+    id="projectImg"
+  >
+        
+</div>
+
+      <div class="project-card__body">
+        <h3>Student Study Planner</h3>
+        <p>
+          A student-focused study planning web application designed to help students organize their
+          study schedules, manage subjects, plan tasks and improve their study routine.
+        </p>
+
+        <div class="project-card__features">
+          <span><i class="fa-solid fa-check"></i> Add &amp; manage subjects</span>
+          <span><i class="fa-solid fa-check"></i> Daily &amp; weekly task planning</span>
+          <span><i class="fa-solid fa-check"></i> Clean, distraction-free UI</span>
+          <span><i class="fa-solid fa-check"></i> Fully responsive layout</span>
+        </div>
+
+        <div class="project-card__stack">
+          <span class="chip chip--tech">HTML</span>
+          <span class="chip chip--tech">CSS</span>
+          <span class="chip chip--tech">JavaScript</span>
+        </div>
+
+        <div class="project-card__actions">
+
+  <a
+    href="https://manishkumar830-dev.github.io/Study-Planner/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn--primary btn--sm"
+  >
+    <span>Live Project</span>
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  </a>
+
+  <a
+    href="https://github.com/manishkumar830-dev/Study-Planner"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn--ghost btn--sm"
+  >
+    <i class="fa-brands fa-github"></i>
+    <span>GitHub</span>
+  </a>
+
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT I DO ===== -->
+  <section class="section" id="what-i-do">
+    <div class="section__head" data-reveal>
+      <p class="section__eyebrow">05 — Focus Areas</p>
+      <h2 class="section__title">What I Do</h2>
+    </div>
+
+    <div class="whatido__grid">
+      <div class="whatido__card glass-card" data-reveal>
+        <div class="whatido__icon whatido__icon--blue"><i class="fa-brands fa-python"></i></div>
+        <h3>Python Development</h3>
+        <p>Learning and building programs using Python — from scripts to logic-driven applications.</p>
+      </div>
+      <div class="whatido__card glass-card" data-reveal>
+        <div class="whatido__icon whatido__icon--purple"><i class="fa-solid fa-code"></i></div>
+        <h3>Web Development</h3>
+        <p>Creating responsive and interactive websites using HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="whatido__card glass-card" data-reveal>
+        <div class="whatido__icon whatido__icon--pink"><i class="fa-solid fa-puzzle-piece"></i></div>
+        <h3>Problem Solving</h3>
+        <p>Practicing programming logic and solving technical problems through consistent practice.</p>
+      </div>
+      <div class="whatido__card glass-card" data-reveal>
+        <div class="whatido__icon whatido__icon--cyan"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <h3>Continuous Learning</h3>
+        <p>Exploring new technologies and improving my development skills every single day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEARNING JOURNEY ===== -->
+  <section class="section" id="journey">
+    <div class="section__head" data-reveal>
+      <p class="section__eyebrow">06 — The Road So Far</p>
+      <h2 class="section__title">Learning Journey</h2>
+    </div>
+
+    <div class="journey">
+      <div class="journey__line" aria-hidden="true"></div>
+
+      <div class="journey__item" data-reveal>
+        <div class="journey__marker"><i class="fa-solid fa-flag"></i></div>
+        <div class="glass-card journey__card"><h3>Started Learning Programming</h3><p>Took the first step into logic building and the basics of computer science.</p></div>
+      </div>
+      <div class="journey__item" data-reveal>
+        <div class="journey__marker"><i class="fa-solid fa-c"></i></div>
+        <div class="glass-card journey__card"><h3>Learned C / C++</h3><p>Understood core programming concepts — variables, loops, functions and structures.</p></div>
+      </div>
+      <div class="journey__item" data-reveal>
+        <div class="journey__marker"><i class="fa-brands fa-python"></i></div>
+        <div class="glass-card journey__card"><h3>Started Python</h3><p>Moved on to Python for its simplicity and power — now my primary language.</p></div>
+      </div>
+      <div class="journey__item" data-reveal>
+        <div class="journey__marker"><i class="fa-solid fa-globe"></i></div>
+        <div class="glass-card journey__card"><h3>Started Web Development</h3><p>Began building with HTML, CSS and JavaScript to bring designs to life.</p></div>
+      </div>
+      <div class="journey__item" data-reveal>
+        <div class="journey__marker"><i class="fa-solid fa-calendar-check"></i></div>
+        <div class="glass-card journey__card"><h3>Built Student Study Planner</h3><p>Applied my skills to build a real, functional project from the ground up.</p></div>
+      </div>
+      <div class="journey__item" data-reveal>
+        <div class="journey__marker journey__marker--active"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <div class="glass-card journey__card journey__card--active"><h3>Currently Improving</h3><p>Sharpening development and problem-solving skills through daily practice.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certificates" class="certificates section">
+
+  <div class="section-heading">
+    <span class="section-kicker">MY CERTIFICATION</span>
+    <h2>Certificates</h2>
+    <p>Certifications and professional learning achievements.</p>
+  </div>
+
+  <div class="certificates__grid">
+
+    <div class="certificate-card glass-card">
+
+      <div class="certificate-card__image">
+        <img
+          src="assets/certificate.jpg"
+          alt="Deloitte Data Analytics Job Simulation Certificate"
+        >
+      </div>
+
+      <div class="certificate-card__content">
+
+        <span class="certificate-card__issuer">
+          Deloitte
+        </span>
+
+        <h3>Data Analytics Job Simulation</h3>
+
+        <p>
+          Certificate of Completion — January 10th, 2026.
+          Completed practical tasks in data analysis and
+          forensic technology.
+        </p>
+
+        <a
+          href="assets/certificate.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary btn--sm"
+        >
+          <i class="fa-solid fa-certificate"></i>
+          View Certificate
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="section__head" data-reveal>
+      <p class="section__eyebrow">08 — Get In Touch</p>
+      <h2 class="section__title">Let's Connect</h2>
+      <p class="section__sub">Have an idea, project or opportunity? I'd love to connect and learn together.</p>
+    </div>
+
+    <div class="contact__grid">
+
+      <div class="contact__info" data-reveal>
+        <a href="mailto:manishkumar8303505285@gmail.com" class="contact-link glass-card">
+          <span class="contact-link__icon"><i class="fa-solid fa-envelope"></i></span>
+          <span>
+            <strong>Email</strong>
+            <small id="emailText">manishkumar8303505285@gmail.com</small>
+          </span>
+        </a>
+        <a href="https://github.com/manishkumar830-dev" target="_blank" rel="noopener" class="contact-link glass-card">
+          <span class="contact-link__icon"><i class="fa-brands fa-github"></i></span>
+          <span>
+            <strong>GitHub</strong>
+            <small>github.com/manishkumar830-dev</small>
+          </span>
+        </a>
+        <a href="https://linkedin.com/in/manish-kumar-282073412" target="_blank" rel="noopener" class="contact-link glass-card">
+          <span class="contact-link__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+          <span>
+            <strong>LinkedIn</strong>
+            <small>linkedin.com/in/manish-kumar-282073412</small>
+          </span>
+        </a>
+        <a href="https://instagram.com/its_manishhh____" target="_blank" rel="noopener" class="contact-link glass-card">
+          <span class="contact-link__icon"><i class="fa-brands fa-instagram"></i></span>
+          <span>
+            <strong>Instagram</strong>
+            <small>@its_manishhh____</small>
+          </span>
+        </a>
+      </div>
+
+      <form action="https://formspree.io/f/xnpabaqv" method="POST" class="contactForm" data-reveal novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name">
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <span class="form-error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea or opportunity..."></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          <span>Send Message</span><i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a href="#home" class="navbar__logo">
+      <span class="logo-bracket">&lt;</span>Manish<span class="logo-accent"> Kumar</span><span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <div class="footer__socials">
+      <a href="https://github.com/manishkumar830-dev" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/manish-kumar-282073412" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:manishkumar8303505285@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://wa.me/918303505285" target="_blank" rel="noopener" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://instagram.com/its_manishhh____" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>  
+    </div>
+
+    <p class="footer__copy">&copy; 2026 Manish Kumar. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
