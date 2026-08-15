@@ -54,23 +54,22 @@ document.addEventListener("DOMContentLoaded", () => {
   /* -------------------------------------------------------
      MOBILE MENU
   ------------------------------------------------------- */
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
+ const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
 
+if (hamburger && mobileMenu) {
   hamburger.addEventListener("click", () => {
-    const isOpen = mobileMenu.classList.toggle("open");
-    hamburger.classList.toggle("open", isOpen);
-    hamburger.setAttribute("aria-expanded", String(isOpen));
-  });
 
-  mobileMenu.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.remove("open");
-      hamburger.classList.remove("open");
-      hamburger.setAttribute("aria-expanded", "false");
-    });
-  });
+    hamburger.classList.toggle("open");
+    mobileMenu.classList.toggle("open");
 
+    hamburger.setAttribute(
+      "aria-expanded",
+      mobileMenu.classList.contains("open")
+    );
+
+  });
+}
   /* -------------------------------------------------------
      SCROLL TO TOP
   ------------------------------------------------------- */

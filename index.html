@@ -29,32 +29,60 @@
 
 <!-- ===== NAVIGATION ===== -->
 <header class="navbar" id="navbar">
+
   <div class="navbar__inner">
+
     <a href="#home" class="navbar__logo">
-      <span class="logo-bracket">&lt;</span>Manish<span class="logo-accent"> Kumar</span><span class="logo-bracket">/&gt;</span>
+      <span class="logo-bracket">&lt;</span>
+      Manish<span class="logo-accent"> Kumar</span>
+      <span class="logo-bracket">/&gt;</span>
     </a>
 
+    <!-- Desktop Navigation -->
     <nav class="nav__links">
 
- 
-</nav>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certificates" class="nav-link">Certification</a>
+      <a href="#contact" class="nav-link">Contact</a>
+
+    </nav>
+
+    <!-- Let's Talk -->
     <a href="#contact" class="btn btn--nav">Let's Talk</a>
 
-    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <!-- Mobile Hamburger -->
+    <button
+      class="hamburger"
+      id="hamburger"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
     </button>
+
   </div>
 
-  <!-- Mobile menu -->
+
+  <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
+
     <a href="#home" class="nav-link">Home</a>
     <a href="#about" class="nav-link">About</a>
-    <a href="#education" class="nav-link">Education</a>
     <a href="#skills" class="nav-link">Skills</a>
+    <a href="#education" class="nav-link">Education</a>
     <a href="#projects" class="nav-link">Projects</a>
-    <a href="#journey" class="nav-link">Journey</a>
+    <a href="#certificates" class="nav-link">Certification</a>
     <a href="#contact" class="nav-link">Contact</a>
+
   </div>
+
 </header>
 
 <main>
@@ -640,20 +668,7 @@
             <small>linkedin.com/in/manish-kumar-282073412</small>
           </span>
         </a>
-        <a href="https://instagram.com/its_manishhh____" target="_blank" rel="noopener" class="contact-link glass-card">
-          <span class="contact-link__icon"><i class="fa-brands fa-instagram"></i></span>
-          <span>
-            <strong>Instagram</strong>
-            <small>@its_manishhh____</small>
-          </span>
-        </a>
-        <a href="https://wa.me/918303505285" target="_blank" rel="noopener" class="contact-link glass-card">
-          <span class="contact-link__icon"><i class="fa-brands fa-whatsapp"></i></span>
-          <span>
-            <strong>WhatsApp</strong>
-            <small>+91 8303505285</small>
-          </span>
-        </a>
+
       </div>
 
       <form action="https://formspree.io/f/xnpabaqv" method="POST" class="contactForm" data-reveal novalidate>
@@ -666,6 +681,11 @@
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="you@example.com">
           <span class="form-error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="subject">Phone Number</label>
+          <input type="text" id="subject" name="subject" placeholder="Your phone number">
+          <span class="form-error" id="subjectError"></span>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
