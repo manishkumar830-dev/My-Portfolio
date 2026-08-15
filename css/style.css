@@ -4247,3 +4247,175 @@ body {
   }
 
 }
+/* =========================================
+   MOBILE HAMBURGER - FINAL FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .navbar__inner {
+    position: relative !important;
+    min-height: 64px !important;
+  }
+
+  .navbar .hamburger {
+    display: flex !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    flex-shrink: 0 !important;
+
+    padding: 8px !important;
+    margin-left: auto !important;
+
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    gap: 5px !important;
+
+    border: 1px solid rgba(255,255,255,0.25) !important;
+    border-radius: 10px !important;
+
+    background: rgba(255,255,255,0.06) !important;
+
+    z-index: 9999 !important;
+  }
+
+  .navbar .hamburger span {
+    display: block !important;
+
+    width: 26px !important;
+    height: 3px !important;
+
+    flex-shrink: 0 !important;
+
+    margin: 0 !important;
+
+    border-radius: 5px !important;
+
+    background: #ffffff !important;
+  }
+
+}
+/* MOBILE HAMBURGER - RED */
+@media (max-width: 768px) {
+
+  .navbar .hamburger span {
+    background: #ff0000 !important;
+    width: 27px !important;
+    height: 3px !important;
+  }
+
+  .navbar .hamburger {
+    border-color: rgba(255, 0, 0, 0.4) !important;
+  }
+
+}
+/* =========================================
+   FORCE MOBILE HAMBURGER VISIBILITY
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  header#navbar .navbar__inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    position: relative !important;
+  }
+
+  header#navbar .hamburger {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: relative !important;
+    z-index: 999999 !important;
+
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+
+    margin-left: auto !important;
+    padding: 8px !important;
+
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 6px !important;
+
+    background: #111827 !important;
+    border: 2px solid red !important;
+    border-radius: 10px !important;
+  }
+
+  header#navbar .hamburger span {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: 28px !important;
+    height: 4px !important;
+    min-height: 4px !important;
+
+    background: red !important;
+    border-radius: 4px !important;
+  }
+}
+/* SMALLER MOBILE HAMBURGER */
+@media (max-width: 768px) {
+
+  header#navbar .hamburger {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    padding: 6px !important;
+    gap: 5px !important;
+    border-radius: 8px !important;
+  }
+
+  header#navbar .hamburger span {
+    width: 23px !important;
+    height: 3px !important;
+    min-height: 3px !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  header#navbar .hamburger {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    padding: 5px !important;
+    gap: 4px !important;
+    border-radius: 7px !important;
+  }
+
+  header#navbar .hamburger span {
+    width: 20px !important;
+    height: 2.5px !important;
+    min-height: 2.5px !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  header#navbar .hamburger {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    padding: 4px !important;
+    gap: 3px !important;
+    border-radius: 6px !important;
+  }
+
+  header#navbar .hamburger span {
+    width: 18px !important;
+    height: 2px !important;
+    min-height: 2px !important;
+  }
+
+}
