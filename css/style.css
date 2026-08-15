@@ -3233,235 +3233,255 @@ body {
     align-items: center;
     gap: 8px;
 }
-/* =========================================
-   MOBILE / PHONE RESPONSIVE DESIGN
-   ========================================= */
+/* =====================================================
+   FINAL MOBILE RESPONSIVE CSS
+   ===================================================== */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-  /* ---------- General ---------- */
+  /* ===== BASIC ===== */
 
-  html {
-    scroll-behavior: smooth;
-  }
-
+  html,
   body {
     width: 100%;
-    overflow-x: hidden;
-  }
-
-  section {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .container,
-  .section-container {
-    width: 100%;
     max-width: 100%;
-    padding-left: 18px !important;
-    padding-right: 18px !important;
+    overflow-x: hidden !important;
+  }
+
+  * {
     box-sizing: border-box;
   }
 
+  img {
+    max-width: 100%;
+  }
 
-  /* ---------- Navbar ---------- */
+
+  /* ===== NAVBAR ===== */
 
   .nav,
   .navbar {
-    padding: 12px 16px !important;
+    width: 100% !important;
+    padding: 12px 15px !important;
   }
 
-  .nav__links,
-  .navbar__links {
-    gap: 10px;
+  .nav__inner,
+  .navbar__inner {
+    width: 100% !important;
   }
 
 
-  /* ---------- Home / Hero ---------- */
+  /* ===== HERO ===== */
 
   .hero {
+    width: 100% !important;
     min-height: auto !important;
-    padding: 100px 18px 70px !important;
+    padding: 90px 18px 60px !important;
   }
 
+  .hero__inner,
   .hero__content {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .hero__title {
-    font-size: clamp(2rem, 10vw, 3rem) !important;
-    line-height: 1.1 !important;
+    width: 100% !important;
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
   }
 
+  /* MANISH KUMAR - single line */
   .hero__title-name {
-    font-size: clamp(2.2rem, 11vw, 3.2rem) !important;
+    display: block !important;
+    width: 100% !important;
+    font-size: clamp(1.8rem, 9vw, 2.6rem) !important;
+    line-height: 1.1 !important;
     white-space: nowrap !important;
+    letter-spacing: -0.03em !important;
   }
 
   .hero__description,
   .hero__text {
-    font-size: 0.95rem !important;
+    width: 100% !important;
+    font-size: 0.9rem !important;
     line-height: 1.6 !important;
   }
 
   .hero__actions {
+    width: 100% !important;
     display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 12px !important;
-    width: 100%;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
   }
 
   .hero__actions .btn {
-    width: 100%;
-    justify-content: center;
-    box-sizing: border-box;
+    max-width: 100% !important;
   }
 
 
-  /* ---------- Hero Image ---------- */
+  /* ===== HERO PHOTO ===== */
 
   .hero__visual,
   .hero__image,
   .hero__photo {
-    max-width: 100%;
-    margin: 25px auto 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 30px auto 0 !important;
   }
 
   .profile-frame {
-    width: min(75vw, 300px) !important;
-    height: min(75vw, 300px) !important;
+    width: 260px !important;
+    height: 260px !important;
+    max-width: 80vw !important;
+    max-height: 80vw !important;
     margin: 0 auto !important;
   }
 
 
-  /* ---------- Section Headings ---------- */
+  /* ===== ALL SECTIONS ===== */
+
+  section {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .container,
+  .section-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin: 0 auto !important;
+  }
 
   .section-heading {
-    text-align: center;
-    margin-bottom: 28px !important;
+    width: 100% !important;
+    text-align: center !important;
   }
 
   .section-heading h2,
   .section-title {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
     line-height: 1.2 !important;
   }
 
-  .section-heading p {
-    font-size: 0.9rem !important;
-    line-height: 1.5 !important;
-  }
 
-
-  /* ---------- About ---------- */
+  /* ===== ABOUT ===== */
 
   .about__grid {
     display: flex !important;
     flex-direction: column !important;
+    width: 100% !important;
     gap: 20px !important;
   }
 
   .about__visual {
+    order: 1 !important;
     width: 100% !important;
-    order: 1;
   }
 
   .about__card {
-    width: 100% !important;
-    order: 2;
-    box-sizing: border-box;
-  }
-
-  .about__visual .intro-card {
+    order: 2 !important;
     width: 100% !important;
     max-width: 100% !important;
-    box-sizing: border-box;
+  }
+
+  /* Only square photo */
+  .intro-card {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .intro-card__photo {
-    width: min(75vw, 280px) !important;
-    height: min(75vw, 280px) !important;
+    width: 240px !important;
+    height: 240px !important;
+    max-width: 75vw !important;
+    max-height: 75vw !important;
     margin: 0 auto !important;
     border-radius: 18px !important;
   }
 
   .about__quote,
   .about__text {
-    font-size: 0.9rem !important;
+    width: 100% !important;
+    font-size: 0.88rem !important;
     line-height: 1.65 !important;
   }
 
   .about__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
   }
 
-  .chip {
-    font-size: 0.75rem !important;
-  }
 
-
-  /* ---------- Education ---------- */
+  /* ===== EDUCATION ===== */
 
   .education__grid {
     display: flex !important;
     flex-direction: column !important;
-    gap: 16px !important;
+    width: 100% !important;
+    gap: 15px !important;
   }
 
   .education-card {
+    display: flex !important;
     width: 100% !important;
     max-width: 100% !important;
-    box-sizing: border-box !important;
+    min-width: 0 !important;
   }
 
   .education-card__content {
     min-width: 0 !important;
     width: 100% !important;
-    box-sizing: border-box !important;
-  }
-
-  .education-card__college {
-    font-size: 0.82rem !important;
-    line-height: 1.5 !important;
-    overflow-wrap: anywhere !important;
   }
 
   .education-card__content h3 {
-    font-size: 1.05rem !important;
-    line-height: 1.35 !important;
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .education-card__college {
+    font-size: 0.8rem !important;
+    line-height: 1.5 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
   }
 
 
-  /* ---------- Skills ---------- */
+  /* ===== SKILLS ===== */
 
   .skills__grid,
   .skills-grid {
+    display: grid !important;
     grid-template-columns: 1fr !important;
+    width: 100% !important;
     gap: 14px !important;
   }
 
   .skill-card {
     width: 100% !important;
-    box-sizing: border-box !important;
+    min-width: 0 !important;
   }
 
 
-  /* ---------- Project ---------- */
+  /* ===== PROJECT ===== */
 
   .project-card {
     width: 100% !important;
     max-width: 100% !important;
-    box-sizing: border-box !important;
+    min-width: 0 !important;
   }
 
   .project-card__preview {
-    height: 210px !important;
+    width: 100% !important;
+    height: 190px !important;
   }
 
   .project-card__preview img {
@@ -3471,158 +3491,159 @@ body {
   }
 
   .project-card__body {
-    padding: 18px !important;
+    width: 100% !important;
+    padding: 16px !important;
   }
 
   .project-card__body h3 {
-    font-size: 1.25rem !important;
+    font-size: 1.2rem !important;
   }
 
   .project-card__body p {
-    font-size: 0.88rem !important;
+    font-size: 0.86rem !important;
     line-height: 1.6 !important;
   }
 
   .project-card__features {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .project-card__stack {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 7px !important;
   }
 
   .project-card__actions {
     display: flex !important;
     flex-direction: column !important;
+    width: 100% !important;
     gap: 10px !important;
   }
 
   .project-card__actions .btn {
-    width: 100%;
-    justify-content: center;
+    width: 100% !important;
+    justify-content: center !important;
   }
 
 
-  /* ---------- Certification ---------- */
+  /* ===== CERTIFICATION ===== */
 
   .certificate-card,
   .certification-card {
     width: 100% !important;
     max-width: 100% !important;
-    box-sizing: border-box;
+    min-width: 0 !important;
   }
 
   .certificate-card img,
   .certification-card img {
     width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
     object-fit: contain !important;
   }
 
 
-  /* ---------- Contact ---------- */
+  /* ===== CONTACT ===== */
 
   .contact__grid {
     display: flex !important;
     flex-direction: column !important;
-    gap: 18px !important;
-  }
-
-  .contact-card,
-  .contact__card {
     width: 100% !important;
-    box-sizing: border-box !important;
+    gap: 16px !important;
   }
 
-  .contact__socials,
-  .footer__socials {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .contact form {
-    width: 100%;
+  .contact__card,
+  .contact-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 
   .contact input,
-  .contact textarea {
+  .contact textarea,
+  .contact select {
     width: 100% !important;
     max-width: 100% !important;
-    box-sizing: border-box !important;
   }
 
   .contact textarea {
-    min-height: 130px;
+    min-height: 130px !important;
   }
 
 
-  /* ---------- Footer ---------- */
-
-  .footer {
-    text-align: center;
-    padding: 30px 18px !important;
-  }
+  /* ===== SOCIAL ICONS ===== */
 
   .footer__socials {
-    margin-top: 15px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
   }
 
 
-  /* ---------- Hide decorative overflow ---------- */
+  /* ===== BUTTONS ===== */
+
+  .btn {
+    max-width: 100% !important;
+  }
+
+
+  /* ===== DECORATIONS ===== */
 
   .orbit-ring,
   .orbit-node,
   .orbit-particle,
   .geo-shape,
   .code-chip {
-    max-width: 100%;
+    pointer-events: none !important;
   }
 
 }
 
 
-/* =========================================
-   SMALL PHONES
-   ========================================= */
+/* =====================================================
+   VERY SMALL PHONES
+   ===================================================== */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
   .container,
   .section-container {
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+    padding-left: 13px !important;
+    padding-right: 13px !important;
   }
 
   .hero {
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+    padding-left: 13px !important;
+    padding-right: 13px !important;
   }
 
   .hero__title-name {
-    font-size: 2rem !important;
+    font-size: 1.85rem !important;
   }
 
   .profile-frame {
-    width: 240px !important;
-    height: 240px !important;
-  }
-
-  .intro-card__photo {
     width: 230px !important;
     height: 230px !important;
   }
 
+  .intro-card__photo {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
   .section-heading h2,
   .section-title {
-    font-size: 1.75rem !important;
+    font-size: 1.65rem !important;
   }
 
   .project-card__preview {
-    height: 180px !important;
-  }
-
-  .btn {
-    font-size: 0.85rem !important;
+    height: 170px !important;
   }
 
 }
