@@ -3749,3 +3749,20 @@ body {
     }
 
 }
+@keyframes orbit3D {
+
+    0% {
+        transform:
+            perspective(800px)
+            rotateX(65deg)
+            rotateZ(0deg);
+    }
+
+    100% {
+        transform:
+            perspective(800px)
+            rotateX(65deg)
+            rotateZ(180deg);
+    }
+
+}
