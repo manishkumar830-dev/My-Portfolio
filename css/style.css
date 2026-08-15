@@ -3626,3 +3626,107 @@ body {
   }
 
 }
+/* =========================================
+   MOBILE PROFILE - SAME LARGE LOOK
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .hero__visual {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: visible !important;
+  }
+
+  .profile-frame {
+    width: 360px !important;
+    height: 360px !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    border-radius: 50% !important;
+    overflow: visible !important;
+
+    position: relative !important;
+    transform-style: preserve-3d !important;
+  }
+
+  /* Photo stays large and round */
+  .profile-frame__img {
+    width: 100% !important;
+    height: 100% !important;
+
+    border-radius: 50% !important;
+    object-fit: cover !important;
+
+    position: relative !important;
+    z-index: 2 !important;
+  }
+
+  /* Animated frame */
+  .profile-frame__glow {
+    display: block !important;
+
+    position: absolute !important;
+    inset: -12px !important;
+
+    border-radius: 50% !important;
+
+    animation: profileFrameMobile 6s linear infinite !important;
+
+    z-index: 1 !important;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE 3D FRAME ANIMATION
+   ========================================= */
+
+@keyframes profileFrameMobile {
+
+  0% {
+    transform:
+      perspective(800px)
+      rotateX(0deg)
+      rotateY(0deg)
+      rotateZ(0deg);
+  }
+
+  25% {
+    transform:
+      perspective(800px)
+      rotateX(6deg)
+      rotateY(90deg)
+      rotateZ(2deg);
+  }
+
+  50% {
+    transform:
+      perspective(800px)
+      rotateX(0deg)
+      rotateY(180deg)
+      rotateZ(0deg);
+  }
+
+  75% {
+    transform:
+      perspective(800px)
+      rotateX(-6deg)
+      rotateY(270deg)
+      rotateZ(-2deg);
+  }
+
+  100% {
+    transform:
+      perspective(800px)
+      rotateX(0deg)
+      rotateY(360deg)
+      rotateZ(0deg);
+  }
+
+}
