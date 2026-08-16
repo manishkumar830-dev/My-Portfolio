@@ -18,7 +18,7 @@
   --text-2: #8892b0;
   --text-3: #5d648a;
 
-  --blue: #4f7bff;
+  --blue: #fff04f13;
   --blue-soft: #6ea8ff;
   --electric: #2d8bff;
   --cyan: #2fe0e0;
@@ -4416,6 +4416,18 @@ body {
     width: 18px !important;
     height: 2px !important;
     min-height: 2px !important;
+  }
+
+}
+/* MOBILE HAMBURGER - WHITE */
+@media (max-width: 768px) {
+
+  header#navbar .hamburger span {
+    background: #ffffff !important;
+  }
+
+  header#navbar .hamburger {
+    border-color: rgba(255, 255, 255, 0.35) !important;
   }
 
 }
