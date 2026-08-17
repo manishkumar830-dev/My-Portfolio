@@ -4431,3 +4431,36 @@ body {
   }
 
 }
+/* ===== FINAL NAVY BLACK BACKGROUND ===== */
+
+html,
+body {
+    background: #05070f !important;
+    background-image: none !important;
+}
+
+/* Main full-screen background */
+.bg-grid {
+    background: #05070f !important;
+    background-image: none !important;
+    mask-image: none !important;
+}
+
+/* Remove all colored background glows */
+.bg-glow,
+.bg-glow--one,
+.bg-glow--two,
+.bg-glow--three,
+.bg-glow--four {
+    display: none !important;
+}
+
+/* Remove dots */
+.bg-dots {
+    display: none !important;
+}
+
+/* Remove particle layer */
+#particle-canvas {
+    display: none !important;
+}
